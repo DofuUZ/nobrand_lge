@@ -1,0 +1,3 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.android.systemui.lge.statusbar.nobrand">
+    <overlay android:targetPackage="com.android.systemui" android:priority="32"/>
+</manifest>
