@@ -1,6 +1,8 @@
-path %path%;E:\Downloads\phone\platform-tools
+@echo off
+pushd "%~dp0"
+cd dist
 
-adb install -r nobrand_lge.apk
-adb shell cmd overlay enable com.android.systemui.lge.statusbar.nobrand
+adb -d install -r nobrand_lge.apk
+adb -d shell cmd overlay enable com.android.systemui.lge.statusbar.nobrand
 
 pause

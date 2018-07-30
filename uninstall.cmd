@@ -1,5 +1,7 @@
-path %path%;E:\Downloads\phone\platform-tools
+@echo off
+pushd "%~dp0"
+cd dist
 
-adb uninstall com.android.systemui.lge.statusbar.nobrand
+adb -d uninstall com.android.systemui.lge.statusbar.nobrand
 
 pause
